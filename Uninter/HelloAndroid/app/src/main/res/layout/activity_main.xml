@@ -33,16 +33,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Esqueci a senha"
             android:textSize="16sp"
-            android:textColor="#0000ff" />
+            android:textColor="#0000ff"
+            android:layout_weight="1"
+            android:gravity="center"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Cadastre-se"
             android:textSize="16sp"
-            android:textColor="#0000ff"/>
+            android:textColor="#0000ff"
+            android:layout_weight="1"
+            android:gravity="center"/>
     </LinearLayout>
 </LinearLayout>
