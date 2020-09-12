@@ -5,15 +5,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Layout com imagem de Fundo -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/background"
-            android:scaleType="fitXY" />
-    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        android:scaleType="fitXY" />
 
     <!-- Layout do formulário -->
     <LinearLayout
@@ -25,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"/>
+            android:text="Login" />
 
         <EditText
             android:layout_width="match_parent"
