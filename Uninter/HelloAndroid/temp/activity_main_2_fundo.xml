@@ -5,11 +5,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Layout com imagem de Fundo -->
-    <!--<ImageView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/background"
-        android:scaleType="fitXY" />-->
+        android:scaleType="fitXY" />
 
     <!-- Layout do formulário -->
     <LinearLayout
@@ -18,7 +18,6 @@
         android:orientation="vertical"
         android:padding="16dp"
         >
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,24 +36,11 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             />
-
-        <FrameLayout
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" >
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Login" />
-            <ProgressBar
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:translationZ="2dp"
-                android:visibility="visible"/>
-        </FrameLayout>
-
+            android:text="Login"
+            android:layout_gravity="center"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
