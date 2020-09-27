@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CadastroActivity"></activity>
-        <activity android:name=".EsqueciSenhaActivity" />
-        <activity android:name=".HomeActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +17,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".CadastroActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Cadastro"/>
+        <activity
+            android:name=".EsqueciSenhaActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Esqueci a Senha"/>
+        <activity
+            android:name=".HomeActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Home"/>
+
     </application>
 
 </manifest>

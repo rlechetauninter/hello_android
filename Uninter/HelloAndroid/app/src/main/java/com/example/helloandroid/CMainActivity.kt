@@ -8,7 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.helloandroid.extensions.alert
 
-class MainActivity : AppCompatActivity() {
+class CMainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +16,14 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btLogin).setOnClickListener {
             onClickLogin()
+        }
+
+        findViewById<TextView>(R.id.btEsqueciSenha).setOnClickListener {
+            onClickEsqueciSenha()
+        }
+
+        findViewById<TextView>(R.id.btCadastrar).setOnClickListener {
+            onClickCadastrar()
         }
     }
 

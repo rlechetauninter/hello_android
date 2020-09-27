@@ -25,14 +25,18 @@
             android:text="Login" />
 
         <EditText
+            android:id="@+id/tLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Senha" />
+            android:text="Senha"
+
+            />
         <EditText
+            android:id="@+id/tSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -44,6 +48,7 @@
             android:layout_gravity="center" >
 
             <Button
+                android:id="@+id/btLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login" />
@@ -52,14 +57,16 @@
                 android:layout_height="36dp"
                 android:layout_gravity="center"
                 android:translationZ="2dp"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
         </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="26dp">
             <TextView
+                android:id="@+id/btEsqueciSenha"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Esqueci a senha"
@@ -68,6 +75,7 @@
                 android:layout_weight="1"
                 android:gravity="center"/>
             <TextView
+                android:id="@+id/btCadastrar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Cadastre-se"
