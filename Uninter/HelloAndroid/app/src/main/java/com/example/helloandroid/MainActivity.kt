@@ -14,26 +14,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button>(R.id.btLogin).setOnClickListener {
-            onClickLogin()
-        }
+//        findViewById<Button>(R.id.btLogin).setOnClickListener {
+//            onClickLogin()
+//        }
     }
 
-    private fun onClickLogin() {
-        // Encontra as views
-        val tLogin = findViewById<TextView>(R.id.tLogin)
-        val tSenha = findViewById<TextView>(R.id.tSenha)
-        // Lê os textos
-        val login = tLogin.text.toString()
-        val senha = tSenha.text.toString()
-        if(login == "ricardo" && senha == "123") {
-            // OK
-            startActivity(Intent(this,HomeActivity::class.java))
-        } else {
-            // Erro
-            alert("Login incorreto, digite os dados novamente")
-        }
-    }
+//    private fun onClickLogin() {
+//        // Encontra as views
+//        val tLogin = findViewById<TextView>(R.id.tLogin)
+//        val tSenha = findViewById<TextView>(R.id.tSenha)
+//        // Lê os textos
+//        val login = tLogin.text.toString()
+//        val senha = tSenha.text.toString()
+//        if(login == "ricardo" && senha == "123") {
+//            // OK
+//            startActivity(Intent(this,HomeActivity::class.java))
+//        } else {
+//            // Erro
+//            alert("Login incorreto, digite os dados novamente")
+//        }
+//    }
 
     private fun onClickCadastrar() {
         startActivity(Intent(this,CadastroActivity::class.java))
