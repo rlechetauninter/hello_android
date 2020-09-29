@@ -26,7 +26,10 @@
             android:name=".EsqueciSenhaActivity"
             android:parentActivityName=".MainActivity"
             android:label="Esqueci a Senha"/>
-        
+        <activity
+            android:name=".HomeActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Home"/>
 
     </application>
 
