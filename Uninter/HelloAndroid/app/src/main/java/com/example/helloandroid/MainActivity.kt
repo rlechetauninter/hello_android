@@ -2,30 +2,19 @@ package com.example.helloandroid
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.helloandroid.domain.LoginRepository
 import com.example.helloandroid.extensions.alert
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        findViewById<Button>(R.id.btLogin).setOnClickListener {
-            startActivity(Intent(this,HomeActivity::class.java))
-        }
-
-        findViewById<TextView>(R.id.btEsqueciSenha).setOnClickListener {
-            onClickEsqueciSenha()
-        }
-
-        findViewById<TextView>(R.id.btCadastrar).setOnClickListener {
-            onClickCadastrar()
-        }
     }
 
     private fun onClickLogin() {
@@ -35,7 +24,10 @@ class MainActivity : AppCompatActivity() {
         // Lê os textos
         val login = tLogin.text.toString()
         val senha = tSenha.text.toString()
-        if(login == "ricardo" && senha == "123") {
+        // Valida o login
+        val loginRep = LoginRepository()
+        val user = loginRep.login(login,senha)
+        if(user != null) {
             // OK
             startActivity(Intent(this,HomeActivity::class.java))
         } else {
