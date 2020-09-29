@@ -1,6 +1,6 @@
 package com.example.helloandroid.domain
 
-class LoginRepository {
+class LoginService {
     fun login(login:String, senha: String): Usuario? {
         if(login == "ricardo" && senha == "123") {
             return Usuario("Ricardo","a@a.com")

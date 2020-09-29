@@ -2,13 +2,10 @@ package com.example.helloandroid
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.helloandroid.domain.LoginRepository
+import com.example.helloandroid.domain.LoginService
 import com.example.helloandroid.extensions.alert
 
 class MainActivity : AppCompatActivity() {
@@ -37,8 +34,8 @@ class MainActivity : AppCompatActivity() {
         val login = tLogin.text.toString()
         val senha = tSenha.text.toString()
         // Valida o login
-        val loginRep = LoginRepository()
-        val user = loginRep.login(login,senha)
+        val service = LoginService()
+        val user = service.login(login,senha)
         if(user != null) {
             // OK
             startActivity(Intent(this,HomeActivity::class.java))
