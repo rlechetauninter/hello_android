@@ -38,7 +38,11 @@ class MainActivity : AppCompatActivity() {
         val user = service.login(login,senha)
         if(user != null) {
             // OK
-            startActivity(Intent(this,HomeActivity::class.java))
+            finish()
+            val intent = Intent(this,HomeActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
+
         } else {
             // Erro
             alert("Login incorreto, digite os dados novamente")
