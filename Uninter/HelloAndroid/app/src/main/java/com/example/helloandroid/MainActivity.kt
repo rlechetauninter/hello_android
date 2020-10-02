@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.helloandroid.domain.LoginService
 import com.example.helloandroid.extensions.alert
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : LogActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

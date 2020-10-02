@@ -7,7 +7,7 @@ import com.example.helloandroid.domain.CadastroService
 import com.example.helloandroid.extensions.alert
 import kotlinx.android.synthetic.main.activity_cadastro.*
 
-class CadastroActivity : AppCompatActivity() {
+class CadastroActivity : LogActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
