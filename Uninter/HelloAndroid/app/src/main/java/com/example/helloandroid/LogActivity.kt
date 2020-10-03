@@ -12,7 +12,7 @@ open class LogActivity : AppCompatActivity() {
     private val className: String
         get() {
             val s = javaClass.name
-            return s.substring(s.lastIndexOf("."))
+            return s.substring(s.lastIndexOf(".")+1)
         }
 
     override fun onCreate(bundle: Bundle?) {

@@ -1,7 +1,6 @@
 package com.example.helloandroid
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.example.helloandroid.domain.CadastroModel
 import com.example.helloandroid.domain.CadastroService
 import com.example.helloandroid.extensions.alert
