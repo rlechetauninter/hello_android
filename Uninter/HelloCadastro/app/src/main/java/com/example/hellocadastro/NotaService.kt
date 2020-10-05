@@ -2,23 +2,27 @@ package com.example.hellocadastro
 
 object NotaService {
 
-    private val notas = mutableListOf<Nota>()
+    private var count = 0
+    private val notas = mutableSetOf<Nota>()
 
     init {
         for (i in 1..3) {
-            notas.add(Nota("Nota $i","10/10"))
+            notas.add(Nota(i,"Nota $i"))
         }
     }
 
-    fun addNota(nota: Nota) {
-        notas.add(nota)
+    fun save(nota: Nota) {
+        if(nota.id == 0) {
+            nota.id = ++count
+            notas.add(nota)
+        }
     }
 
-    fun removeNota(nota: Nota) {
+    fun remove(nota: Nota) {
         notas.remove(nota)
     }
 
-    fun getNotas(): MutableList<Nota> {
-        return notas
+    fun getNotas(): List<Nota> {
+        return notas.toList()
     }
 }

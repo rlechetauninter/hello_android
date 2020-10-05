@@ -32,14 +32,14 @@ class NotaAdapter(
         val view = holder.itemView
         with(view) {
             // Atualiza os dados do nota
+            tId.text = nota.id.toString()
             tTitulo.text = nota.titulo
-            tData.text = nota.data
+
 
             // Adiciona o evento de clique na linha
             setOnClickListener { onClick(nota) }
         }
     }
     // ViewHolder fica vazio pois usamos o import do Android Kotlin Extensions
-    class NotasViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    }
+    class NotasViewHolder(view: View) : RecyclerView.ViewHolder(view)
 }

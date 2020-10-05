@@ -1,9 +1,10 @@
 package com.example.hellocadastro
 
-import android.os.Parcelable
+import java.io.Serializable
 
-data class Nota (
-    var titulo: String = "",
-    var data: String = ""
+data class Nota(
+    var id: Int = 0,
+    var titulo: String = ""
 
-)
+
+) : Serializable
